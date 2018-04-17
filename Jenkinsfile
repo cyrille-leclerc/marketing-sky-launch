@@ -23,6 +23,11 @@ pipeline {
             sh 'echo \'hello\''
           }
         }
+        stage('') {
+          steps {
+            sleep 5
+          }
+        }
       }
     }
   }
