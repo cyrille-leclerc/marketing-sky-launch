@@ -27,6 +27,6 @@ pipeline {
     }
   }
   triggers {
-    eventTrigger(event(generic('maven://com.example:my-framework')))
+    eventTrigger simpleMatch('maven://com.example:my-framework')
   }
 }
